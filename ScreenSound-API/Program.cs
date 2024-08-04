@@ -12,8 +12,10 @@ using (HttpClient client = new HttpClient())
 
         //musicas[0].ExibirDetalhesDaMusica();
 
-        //LinqFilter.FiltrarTodosOsGenerosMusicais(musicas);
-        LinqFilterArtista.ExibirAsBandas(musicas);
+        //LinqFilter.FiltrarTodosGeneros(musicas);
+        //LinqOrder.ExibirBandas(musicas);
+        //LinqFilter.FiltrarBandasPorGenero(musicas, "rock");
+        LinqFilter.FiltrarMusicasPorBanda(musicas, "Red Hot Chili Peppers");
 
     }
     catch (Exception ex)
